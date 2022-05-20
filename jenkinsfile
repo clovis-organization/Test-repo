@@ -1,0 +1,8 @@
+node{
+    stage('SCM checkout'){
+      git 'https://github.com/clovis-organization/Test-repo'  
+    }
+    stage('compile-package'){
+        sh 'mvn package'
+    }
+   }
